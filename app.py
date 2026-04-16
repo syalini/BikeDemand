@@ -47,14 +47,7 @@ except:
 # Title
 st.markdown("## 🚴 Bike Demand Prediction")
 
-# Personalized input
-name = st.text_input("Enter your name")
 
-if name:
-    st.markdown(f"### 👋 Welcome, {name}!")
-
-# Card container
-st.markdown('<div class="main-card">', unsafe_allow_html=True)
 
 # Layout
 col1, col2 = st.columns(2)
