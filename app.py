@@ -8,12 +8,11 @@ Original file is located at
 """
 
 import streamlit as st
-import pickle
+import joblib
 import numpy as np
 
 # Load model
-with open("best_model.pkl", "rb") as file:
-    model = pickle.load(file)
+model = joblib.load("best_model.pkl")
 
 st.title("🚲 Bike Demand Prediction App")
 
